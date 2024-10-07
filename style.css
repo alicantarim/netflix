@@ -13,7 +13,35 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color ları ekle*/
+  --primary-color: #e50914;
+
+  --color-white: #ffffff;
 }
+
+body {
+  color: var(--color-white);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -0.5%;
+}
+
+h2 {
+}
+
+/* -------
+DESIGN SYSTEM
+------- */
+.rect {
+  width: 100px;
+  height: 100px;
+}
+
 /*
 a {
   font-weight: 500;
