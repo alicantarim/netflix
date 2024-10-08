@@ -1,7 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+  line-height: 1.5;
 
   /*
   color-scheme: light dark;
@@ -15,21 +18,30 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Color ları ekle*/
+
+  /* Primary */
   --primary-redColor: #e50914;
   --primary-blackColor: #000000;
+
+  /* Typography Color */
   --typographyColor-white: #ffffff;
   --typographyColor-gray1: #8c8c8c;
   --typographyColor-gray2: #757575;
   --typographyColor-gray3: #999999;
+
+  /* Accent Color */
   --accentColor-blue: #0071eb;
   --accentColor-orange: #ffa00a;
   --accentColor-green: #5fa53f;
+  --backgroundColor-black: #000000;
+  --backgroundColor-black2: #222222;
 
   --color-background: rgb(186, 146, 146);
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--primary-blackColor);
+  color: var(--typographyColor-white);
 }
 
 h1 {
@@ -41,16 +53,13 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 3rem;
-  line-height: -1.1;
+  font-size: 2rem;
+  line-height: 1.1;
   letter-spacing: -1%;
 }
 
 h3 {
-  font-weight: normal;
   font-size: 1.6rem;
-  line-height: Auto;
-  letter-spacing: 0%;
 }
 
 /* -------
@@ -97,6 +106,19 @@ DESIGN SYSTEM
   font-size: 0.35rem;
 }
 
+.squareBackground {
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  padding: 40px 0 0 3px;
+  font-size: 0.6rem;
+  margin-top: 5px;
+}
+
+.squareBackground p {
+  font-size: 0.35rem;
+}
+
 .primaryColors {
   display: flex;
   flex-direction: row;
@@ -119,12 +141,29 @@ DESIGN SYSTEM
   margin-bottom: 10px;
 }
 
+.backgroundColors {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
 .color {
   margin-right: 2rem;
 }
 
 .accColor {
   margin-right: 0.5rem;
+}
+
+.backColor {
+  margin-right: 0.5rem;
+}
+
+.playButton {
+  width: 130px;
+  height: 40px;
+  font-size: 1.1rem;
 }
 
 /*
