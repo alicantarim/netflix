@@ -13,12 +13,17 @@
   </head>
   <body>
     <div id="app">
-      <h1>Color System</h1>
-      <div class="primaryColors">
-        <div class="color">
-          <h5>Primary Red</h5>
-          <div class="rect" style="background-color: var(--primary-redColor)">
-            <h6>Red</h6>
+      <!-- DESING SYSTEM -->
+      <h1>Desing System</h1>
+
+      <!-- DESING SYSTEM -->
+      <h2>Color System</h2>
+      <div class="ds-element-container">
+        <div class="primaryColors">
+          <div class="color">
+            <h5>Primary Red</h5>
+            <div class="rect" style="background-color: var(--primary-redColor)">
+              <h6>Red</h6>
           </div>
         </div>
         <div class="color">
@@ -42,7 +47,7 @@
         <div class="typeColor">
           <div
             class="squareTypog"
-            style="background-color: var(--typographyColor-gray1)"
+            style="background-color: var(--typography-dark-gray)"
           >
             <h6>Gray2</h6>
             <p>#8C8C8C</p>
@@ -101,7 +106,7 @@
       <div class="backgroundColors">
         <div class="backColor">
           <div
-            class="squareBackground"
+            class="squareBackground border-white"
             style="background-color: var(--backgroundColor-black)"
           >
             <h6>Black</h6>
@@ -110,7 +115,7 @@
         </div>
         <div class="backColor">
           <div
-            class="squareBackground"
+            class="squareBackground border-white"
             style="background-color: var(--backgroundColor-black2)"
           >
             <h6>Black</h6>
@@ -118,7 +123,45 @@
           </div>
         </div>
       </div>
-      <button class="playButton">Play</button>
+    </div>
+
+      <!-- UI Component -->
+    <h2>UI Component</h2>
+
+    <!-- BUTTON Component -->
+    <h3>Buttons</h3>
+    <div class="ds-element-container">
+      <button class="primary-button">Click Me</button>
+      <button class="primary-button">
+        <img src="/public/images/icon-play.svg" alt="More Info">Play</button>
+      <button class="secondary-button">
+        <img src="/public/images/icon-info.svg" alt="More INfo">More Info</button>
+      <button class="outline-button">Service Code</button>
+    </div>  
+
+    <!-- CARD Component -->
+    <h3>Cards</h3>
+    <div class="ds-element-container">
+      <div class="card">
+        <div>
+           <img src="/images/MovieBlock/icon-netflix.png" alt="Netflix Logo">
+          <img src="/public/images/MovieBlock/icon-top10.svg" alt="Top 10 Label">
+        </div>
+           <span class="subtitle">Recently Added</span>
+        </div>
+        <div class="card">
+          <div>
+            <img src="/images/MovieBlock/icon-netflix.png" alt="Netflix Logo">
+          </div>
+           <span class="subtitle">Recently Added</span>
+        </div>
+        <div class="card">
+          <div>
+            <img src="/images/MovieBlock/icon-netflix.png" alt="Netflix Logo">
+            <img src="/public/images/MovieBlock/icon-top10.svg" alt="Top 10 Label">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
