@@ -224,6 +224,11 @@ button {
 }
 
 /* CARD ELEMENT */
+.cards {
+  overflow-x: scroll; /* X ekseninde scroll bar oluşturur.*/
+  scrollbar-width: none; /* Scroll bar'ı gizler.*/
+}
+
 .card {
   background-color: var(--backgroundColor-black2);
   min-width: 20rem;
